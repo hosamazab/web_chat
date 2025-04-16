@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.header_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    filter: brightness(50%); /* Darkens the image */
+}
+
+.header_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_background">
+            <img src="https://bbi.ai/wp-content/uploads/2022/10/shutterstock_678225592-scaled.webp" alt="Background" class="lazyloaded">
+        </div>
+        <div class="header_content">
+            <h2>CONTACT US</h2>
+        </div>
+    </header>
+</body>
+</html>
